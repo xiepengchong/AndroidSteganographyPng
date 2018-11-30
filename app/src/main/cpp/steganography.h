@@ -1,0 +1,11 @@
+//
+// Created by XiePengchong on 2018/11/30.
+//
+
+#ifndef STEGANOGRAPHY_NATIVE_LIB_H
+#define STEGANOGRAPHY_NATIVE_LIB_H
+
+
+
+#endif //STEGANOGRAPHY_NATIVE_LIB_H
+
