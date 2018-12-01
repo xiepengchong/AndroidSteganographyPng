@@ -229,7 +229,6 @@ JNICALL
 Java_steganography_com_steganographydemo_MainActivity_encode(
         JNIEnv *env,
         jobject /* this */,jobject assetManger,jstring string,jstring filename,jstring outputName) {
-    std::string hello = "Hello from C++";
     mgr = AAssetManager_fromJava(env, assetManger);
     const char *nativeString = env->GetStringUTFChars(string, JNI_FALSE);
     const char *nativeFileName = env->GetStringUTFChars(filename, JNI_FALSE);
