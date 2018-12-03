@@ -17,16 +17,28 @@
         android:hint="从图片解析出来的密码" />
 
     <Button
+        android:id="@+id/decode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="对asset中的encode.png进行解密" />
+
+    <Button
         android:id="@+id/encode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="对asset中的input.png进行加密" />
 
     <Button
-        android:id="@+id/decode"
+        android:id="@+id/decodePMM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="对asset中的encode.png进行解密" />
+        android:text="对asset中的encode.pmm进行解密" />
+
+    <Button
+        android:id="@+id/encodePMM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="对asset中的input.pmm进行加密" />
 
 
 </LinearLayout>

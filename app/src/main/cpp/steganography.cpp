@@ -31,7 +31,7 @@ static int android_close(void* cookie) {
  * @param mode
  * @return
  */
-FILE* android_fopen(const char* fname, const char* mode) {
+FILE* android_fopen(const char *fname, const char *mode) {
     if(mode[0] == 'w') return NULL;
     AAsset* asset = AAssetManager_open(mgr, fname, 0);
     if(!asset) return NULL;
@@ -112,7 +112,7 @@ void write_text(FILE *fp,char* password)
 char* getPassword(char *input) {
 
     FILE *fpnew;
-    if ((fpnew = android_fopen(input,"rb")) == NULL) {
+    if ((fpnew = android_fopen(input, "rb")) == NULL) {
         fclose(fpnew);
         return "";
     }
@@ -162,7 +162,7 @@ int write_password_text(char* password,char* filename,char* output){
     unsigned char Signature[8]={0x89,0x50,0x4e,0x47,0x0d,0x0a,0x1a,0x0a};
     unsigned char IEND[12]={0x00,0x00,0x00,0x00,0x49,0x45,0x4e,0x44,0xae,0x42,0x60,0x82};
 
-    if((fp=android_fopen(filename,"rb"))==NULL){
+    if((fp= android_fopen(filename, "rb"))==NULL){
         LOGD("fopen failed file=%s",filename);
         return 0;
     }
